@@ -20,4 +20,7 @@ for (child of children) {
     importantFranchise = child;
     importantFranchise.classList.add("important");
   }
+
+  //Add eventListener on every item
+  child.addEventListener("click", (e) => alert(e.target.innerHTML));
 }
