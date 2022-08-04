@@ -1,7 +1,12 @@
 //Object de référence
 let ulElt = document.querySelector("ul");
-
+let children = [];
 if (ulElt.hasChildNodes()) {
-  let children = ulElt.childNodes;
+  children = ulElt.childNodes;
   console.log(children);
+}
+
+//Loop on children
+for (child of children) {
+  console.log(child);
 }
